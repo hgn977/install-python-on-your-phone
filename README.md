@@ -5,7 +5,7 @@
 本教程适合希望在手机上体验接近桌面级Linux的用户或者没有电脑的用户，支持：科学计算、爬虫开发、GUI、数据可视化与图像处理等，让手机也能变身为随身携带的开发环境，适合学习、实验和轻量级开发。
 
 Termux和Termux: X11安装包：
-https://foruda.gitee.com/attach_file/1758512618284594773/termux.rar?token=7c6d614d7b495e24861f7133ef0e5684&ts=1758512692&attname=Termux.rar
+[点击下载Termux.rar](https://gitee.com/hgn977/install-python-on-your-phone/releases/download/v/Termux.rar)
 
 ## 安装教程
 
