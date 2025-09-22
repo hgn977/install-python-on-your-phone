@@ -167,7 +167,7 @@ deactivate
 ```
 ### 9. 安装谷歌浏览器
 ```
-sudo apt install chromium chromium-l10n
+sudo apt install chromium chromium-l10n chromium-driver
 ```
 - 搜索引擎插件：`New Tab Redirect`
 
