@@ -183,6 +183,7 @@ chromium --no-sandbox
 https://code.visualstudio.com/Download
 ```
 - 下载ARM64版.deb软件包
+
 安装VSCode
 ```
 sudo dpkg -i 包名.deb
@@ -219,6 +220,7 @@ Python: Select Interpreter
 https://www.jetbrains.com/zh-cn/pycharm/download/?section=linux
 ```
 - 下载ARM64版.tar.gz压缩包
+
 解压压缩包
 ```
 tar -zxvf pycharm-*.tar.gz
