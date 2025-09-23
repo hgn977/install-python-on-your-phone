@@ -24,7 +24,7 @@ pkg update && pkg upgrade
 ```
 安装必要软件
 ```
-pkg install x11-repo pulseaudio proot-distro wget git adb
+pkg install x11-repo pulseaudio proot-distro wget git android-tools
 ```
 ```
 pkg install termux-x11-nightly
