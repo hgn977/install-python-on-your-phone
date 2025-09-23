@@ -65,11 +65,25 @@ su - demo
 ```
 sudo whoami
 ```
-输入exit退出，进入普通用户
+
+### 5. 下载启动脚本
+退出Debian，回到Termux环境
+```
+wget https://gitee.com/hgn977/install-python-on-your-phone/raw/master/debian/debianxfce4.sh
+```
+给脚本添加执行权限
+```
+chmod +x debianxfce4.sh
+```
+运行
+```
+./debianxfce4.sh
+```
+
+### 6. 设置中文环境与时区
 ```
 proot-distro login debian --user demo
 ```
-### 5. 设置中文环境与时区
 设置默认环境为zh_CN.UTF-8
 ```
 sudo dpkg-reconfigure locales
@@ -102,20 +116,6 @@ sudo dpkg-reconfigure tzdata
 查看当前时区
 ```
 date
-```
-
-### 6. 下载启动脚本
-退出Debian，回到Termux环境
-```
-wget https://gitee.com/hgn977/install-python-on-your-phone/raw/master/debian/debianxfce4.sh
-```
-给脚本添加执行权限
-```
-chmod +x debianxfce4.sh
-```
-运行
-```
-./debianxfce4.sh
 ```
 
 ### 7. 安卓12+解除进程限制
