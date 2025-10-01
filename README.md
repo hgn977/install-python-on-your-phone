@@ -255,6 +255,84 @@ Terminal=false
 StartupWMClass=jetbrains-pycharm
 ```
 
+## Jupyter的安装
+### 安装Jupyter notebook
+进入Debian系统
+```
+proot-distro login debian --user demo
+```
+进入Python虚拟环境
+```
+source ~/myvenv/bin/activate
+```
+安装Jupyter
+```
+pip install jupyter
+```
+设置密码
+```
+jupyter notebook password
+```
+启动jupyter
+```
+jupyter notebook
+```
+如果此时可以正常使用，表示可以正常连接内核，可直接跳到下载启动脚本
+
+### [542]报错无法连接内核处理
+安装gcc等编译工具
+```
+sudo apt update
+```
+```
+sudo apt install build-essential
+```
+创建`jupyter_fix`文件夹
+```
+mkdir -p ~/jupyter_fix
+```
+进入文件夹
+```
+cd ~/jupyter_fix
+```
+下载`skip_getifaddrs.c`文件
+```
+wget https://gitee.com/hgn977/install-python-on-your-phone/raw/master/debian/skip_getifaddrs.c
+```
+将`skip_getifaddrs.c`编译为共享库
+```
+gcc -shared -fPIC -o skip_getifaddrs.so skip_getifaddrs.c
+```
+启动Jupyter
+```
+LD_PRELOAD=$HOME/jupyter_fix/skip_getifaddrs.so jupyter notebook
+```
+### 下载启动脚本
+在Debian中通过脚本启动
+```
+wget https://gitee.com/hgn977/install-python-on-your-phone/raw/master/debian/debian_jupyter.sh
+```
+```
+chmod +x debian_jupyter.sh
+```
+```
+./debian_jupyter.sh
+```
+在Termux中通过脚本启动并自动打开浏览器
+```
+wget https://gitee.com/hgn977/install-python-on-your-phone/raw/master/debian/termux_jupyter.sh
+```
+```
+chmod +x termux_jupyter.sh
+```
+```
+./termux_jupyter.sh
+```
+
+
+
+
+
 
 
 ## 版权与许可证
