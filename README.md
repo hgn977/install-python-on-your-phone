@@ -267,7 +267,7 @@ source ~/myvenv/bin/activate
 ```
 安装Jupyter
 ```
-pip install jupyter
+pip install jupyter jupyterlab-language-pack-zh-CN
 ```
 设置密码
 ```
